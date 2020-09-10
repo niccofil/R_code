@@ -26,7 +26,7 @@ p <- plot(s_rate, p_8, ylim = c(0,30), xlab = "success rate",
           ylab = "probability of 8 successes", col = "blue", type = 'l')
 
 
-#P-value of having 8 or more successes out of 100 with success rate 0.34
+#P-value of having 8 or more successes out of 10 with success rate 0.34
 
 p_value <- (pbinom(8,10,0.34, lower.tail = FALSE) + dbinom(8,10,0.34)) * 100
 
